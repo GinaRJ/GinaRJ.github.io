@@ -44,7 +44,7 @@ jobs:
     - name: Run Pylint
       uses: davidslusser/actions_python_pylint@v1.0.0
       with:
-        src: "Concept Diagrams/ci_cd-diagram/"
+        src: "Concept_Diagrams/ci_cd_diagram"
 
   build:
     runs-on: ubuntu-latest
