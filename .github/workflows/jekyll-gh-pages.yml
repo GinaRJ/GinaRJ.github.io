@@ -22,6 +22,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  #lint this actions workflow
+  action-lint:
+    name: Action Linting
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run Action Linting
+      uses: cfy9/action-linting@main
   # Build job
   build:
     runs-on: ubuntu-latest
