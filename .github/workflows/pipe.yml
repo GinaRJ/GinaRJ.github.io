@@ -33,13 +33,17 @@ jobs:
     - name: Run Action Linting
       uses: cfy9/action-linting@main
   linting:
-    name: Action Linting
+    name: Linting
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
 
     - name: Run Action Linting
       uses: cfy9/action-linting@main
+
+    - name: Run Pylint
+      uses: davidslusser/actions_python_pylint@v1.0.0
+
   build:
     runs-on: ubuntu-latest
     needs: ["tests", "linting"]
