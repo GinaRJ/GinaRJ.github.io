@@ -41,11 +41,6 @@ jobs:
       run: |
         poetry config virtualenvs.create false
 
-    - name: Check current directory and list files
-      run: |
-        cd Concept_Diagrams
-        pwd
-        ls -la
     - name: Install dependencies
       run: |
         cd Concept_Diagrams
@@ -53,6 +48,7 @@ jobs:
 
     - name: Run tests
       run: |
+        cd Concept_Diagrams
         poetry run pytest
   linting:
     name: Linting
