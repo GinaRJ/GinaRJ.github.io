@@ -41,6 +41,10 @@ jobs:
       run: |
         poetry config virtualenvs.create false
 
+    - name: Check current directory and list files
+      run: |
+        pwd
+        ls -la
     - name: Install dependencies
       run: |
         poetry install
