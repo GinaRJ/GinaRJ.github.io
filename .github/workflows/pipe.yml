@@ -43,6 +43,7 @@ jobs:
 
     - name: Check current directory and list files
       run: |
+        cd Concept_Diagrams
         pwd
         ls -la
     - name: Install dependencies
