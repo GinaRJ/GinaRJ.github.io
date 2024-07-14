@@ -48,6 +48,7 @@ jobs:
         ls -la
     - name: Install dependencies
       run: |
+        cd Concept_Diagrams
         poetry install
 
     - name: Run tests
