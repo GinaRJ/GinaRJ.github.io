@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ci-cd-diagram"
+name = "src"
 version = "0.1.0"
 description = ""
 authors = ["Gina James"]
