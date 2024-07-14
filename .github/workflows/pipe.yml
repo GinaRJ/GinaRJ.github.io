@@ -41,11 +41,12 @@ jobs:
     - name: Run Action Linting
       uses: cfy9/action-linting@main
 
-    - name: Run Pylint
-      uses: davidslusser/actions_python_pylint@v1.0.0
-      with:
-        src: "Concept_Diagrams/src"
-        pip_install_command: "pip install pylint"
+    # Need to figure out how to use this with poetry? Is poetry needed in the first place?
+    # - name: Run Pylint
+    #   uses: davidslusser/actions_python_pylint@v1.0.0
+    #   with:
+    #     src: "Concept_Diagrams/src"
+    #     pip_install_command: "pip install pylint"
 
   build:
     runs-on: ubuntu-latest
