@@ -44,8 +44,8 @@ jobs:
     - name: Run Pylint
       uses: davidslusser/actions_python_pylint@v1.0.0
       with:
-        src: "Concept_Diagrams/ci_cd_diagram"
-        pip_install_command: "pip install -e .[dev]"
+        src: "Concept_Diagrams/src"
+        pip_install_command: "pip install pylint"
 
   build:
     runs-on: ubuntu-latest
