@@ -5,7 +5,7 @@ from diagrams.aws.network import ELB
 
 #filenamePrefix = "diagram_"
 #filenameNumber[]
-with Diagram("WebExample", show=False, filename="my_diagram"):
+with Diagram("WebExample", show=False):
     ELB("lb") >> EC2("web") >> RDS("userdb")
 #    filenameNumber.append((len)filenameNumber + 1)
 
