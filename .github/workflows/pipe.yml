@@ -43,7 +43,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd Concept_Diagrams
+        cd concept-diagrams
         poetry install
 
     - name: Install Graphviz  # Add this step to install Graphviz
@@ -51,7 +51,7 @@ jobs:
 
     - name: Run tests
       run: |
-        cd Concept_Diagrams
+        cd concept-diagrams
         poetry run pytest
   linting:
     name: Linting
@@ -66,7 +66,7 @@ jobs:
     # - name: Run Pylint
     #   uses: davidslusser/actions_python_pylint@v1.0.0
     #   with:
-    #     src: "Concept_Diagrams/src"
+    #     src: "concept-diagrams/src"
     #     pip_install_command: "pip install pylint"
 
   build:
